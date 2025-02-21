@@ -86,7 +86,7 @@ const ImageResizer = () => {
             {resizedImages.map((image, index) => (
               <div key={index} className="resized-image-card">
                 <div className="resized-image-preview">
-                  <img src={image.url} alt="Resized" />
+                <img src={image.url} alt="Resized" className="resized-image" />
                 </div>
                 <div className="resized-image-info">
                   <p className="resized-image-size">

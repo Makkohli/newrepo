@@ -102,12 +102,12 @@
     padding: 16px;
   }
   
-  .resized-image-preview img {
+  /* .resized-image-preview img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
-  }
+  } */
   
   .resized-image-info {
     padding: 12px;
@@ -150,4 +150,12 @@
     align-items: center;
     justify-content: center;
   }
+  .resized-image-preview img {
+      /* Fixed width for uniform size */
+    height: 150px;  /* Fixed height */
+    object-fit: contain; /* Ensures aspect ratio is maintained */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+  }
+  
   
